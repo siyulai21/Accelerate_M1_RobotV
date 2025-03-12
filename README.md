@@ -14,13 +14,13 @@ conda install numpy decorator attrs cython pytest
 conda install llvmdev
 conda install cmake
 ```
-Checkout last stable version before Relay phased out
+Checkout my last stable version
 ```
 git clone --recursive https://github.com/apache/tvm.git
 cd tvm
 git checkout v0.19.0
 ```
-Edit the config.cmake file in the build directory setting the following
+Edit the config.cmake file in the build
 ```
 mkdir build
 cd build
@@ -29,4 +29,4 @@ USE_METAL ON
 USE_LLVM ON
 USE_OPENMP gnu
 ```
-make -DCMAKE_OSX_ARCHITECTURES=arm64 ..
+cmake -DCMAKE_OSX_ARCHITECTURES=arm64 ..
