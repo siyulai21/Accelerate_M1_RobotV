@@ -1,4 +1,4 @@
-# Accelerate-AppleM1
+# Accelerate_M1_RobotV
 
 Miniforge from official page (https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-MacOSX-arm64.sh)
 
