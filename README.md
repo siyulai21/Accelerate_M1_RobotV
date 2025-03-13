@@ -1,6 +1,6 @@
 # Accelerate_M1_RobotV
 
-This project is to accelerate my prev robot vision CNN inference using TVM on Apple M1.
+This project is to accelerate my prev robot vision CNN inference using TVM on Apple M1. **Still working**
 
 Download Miniforge from official page (https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-MacOSX-arm64.sh)
 
