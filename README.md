@@ -1,32 +1,34 @@
 # Accelerate-AppleM1
 
-Install Miniforge from official (https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-MacOSX-arm64.sh)
+Miniforge from official page (https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-MacOSX-arm64.sh)
 
-Create an environment for TVM and all dependencies to run
+Create an environment for TVM and all dependencies
 
-Install PyTorch
-```
-conda install -c pytorch pytorch torchvision
-```
 Install TVM dependencies
 ```
 conda install numpy decorator attrs cython pytest
 conda install llvmdev
 conda install cmake
 ```
-Checkout my last stable version
+Checkout the last stable version
 ```
 git clone --recursive https://github.com/apache/tvm.git
 cd tvm
 git checkout v0.19.0
 ```
-Edit the config.cmake file in the build
+Build
 ```
 mkdir build
 cd build
 cp ../cmake/config.cmake .
+```
+Edit the config.cmake file
+```
 USE_METAL ON
 USE_LLVM ON
 USE_OPENMP gnu
 ```
+Make
+```
 cmake -DCMAKE_OSX_ARCHITECTURES=arm64 ..
+```
